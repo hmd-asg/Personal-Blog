@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Personal Blog</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <input type="button" id="btn_toggle" />
+        </div>
+    </header>
+    <section class="container">
+        <div>
+            <div class="circle">
+                <h1>My First Blog</h1>
+            </div>
+        </div>
+        <div>
+            <h2>What's on your mind</h2>
+
+            <form method="POST">
+                <div class="form-container">
+                    <label for="first-name">Username</label>
+                    <input type="text" name="username" id="username" />
+                    <label for="last-name">Title</label>
+                    <input type="text" name="title" id="title" />
+                    <label for="email">Content</label>
+                    <textarea type="text" name="content" id="content"></textarea>
+                    <div id="msg"></div>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="./js/logic.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
